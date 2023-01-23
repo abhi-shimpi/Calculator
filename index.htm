@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CALCULATOR</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main-div">
+        <div id="inner-div">
+            <div id="heading">
+                <p>CALCULATOR</p>
+            </div>
+            <div id="dispalay-box" contenteditable="true" onkeypress="myFunction(this)"></div>
+            <div id="Buttons">
+                <button class="btn" value="=" onclick="onClr()">AC</button>
+                <button class="btn" value="%" onclick="changeValue()">+/-</button>
+                <button class="btn" value="%" onclick="operatorPerc(this)">%</button>
+                <button class=" btn " value="/" onclick="operator(this)">/</button>
+                <br>
+                <button class="btn" value="7" onclick="onclickFunction(this)">7</button>
+                <button class="btn" value="8" onclick="onclickFunction(this)">8</button>
+                <button class="btn" value="9" onclick="onclickFunction(this)">9</button>
+                <button class=" btn " value="*" onclick="operator(this)">*</button>
+                <br>
+                <button class="btn" value="4" onclick="onclickFunction(this)">4</button>
+                <button class="btn" value="5" onclick="onclickFunction(this)">5</button>
+                <button class="btn" value="6" onclick="onclickFunction(this)">6</button>
+                <button class=" btn " value="-" onclick="operator(this)">-</button>
+                <br>
+                <button class="btn" value="1" onclick="onclickFunction(this)"
+                    onkeypress="onclickFunction(this)">1</button>
+                <button class="btn" value="2" onclick="onclickFunction(this)">2</button>
+                <button class="btn" value="3" onclick="onclickFunction(this)">3</button>
+                <button class=" btn " value="+" onclick="operator(this)">+</button>
+                <br>
+                <button id="sp-btn" value="0" onclick="onclickFunction(this)">0</button>
+                <button class="btn" value="." onclick="onclickFunction(this)">.</button>
+                <button class="btn" value="=" onclick="result()" style="background-color: #c14444;">=</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

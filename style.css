@@ -34,7 +34,7 @@ body {
     background-color: black;
 }
 
-#dispalay-box {
+.input {
     width: 100%;
     height: 20%;
     font-size: 4rem;
@@ -45,40 +45,41 @@ body {
     background-color: rgba(245, 245, 245, 255);
 }
 
-#Buttons {
+.Buttons {
     width: 100%;
     height: 59%;
     margin: 1rem 0rem;
-
+    display: flex;
+    flex-direction: column;
 }
 
-#Buttons button {
+.Buttons button {
     background-color: rgba(255, 255, 255, 255);
     border: 1px solid rgb(211, 210, 212);
     transition: background-color 1s;
     font-size: 1.8rem;
 }
 
-#Buttons .btn {
+.Buttons .btn {
     width: 11.2rem;
     height: 4.5rem;
     margin: -1.8px;
 
 }
 
-#Buttons #sp-btn {
+.Buttons #sp-btn {
     width: 22.3rem;
     height: 4.5rem;
     margin: -0.8px;
     font-size: 1.5rem;
 }
 
-#Buttons button:nth-of-type(4n) {
+.Buttons button:nth-of-type(4n) {
     background-color: #c14444;
 }
 
 /* transition common class */
-#Buttons button:hover {
+.Buttons button:hover {
     background-color: rgb(240, 190, 25);
 }
 
@@ -88,7 +89,7 @@ body {
         font-size: 10px;
     }
 
-    #Buttons #sp-btn {
+    .Buttons #sp-btn {
         margin: -1.8px;
     }
 
@@ -103,7 +104,7 @@ body {
         font-size: 6px;
     }
 
-    #Buttons #sp-btn {
+    .Buttons #sp-btn {
         margin: -2.5px;
     }
 
